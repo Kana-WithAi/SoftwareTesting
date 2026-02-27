@@ -1,3 +1,5 @@
+<img width="2481" height="1454" alt="ảnh" src="https://github.com/user-attachments/assets/a3d3f9ff-a19e-406b-80b2-6532fb848b36" />
+
 # SoftwareTesting
 
 Dự án này thực hiện các hàm phân tích điểm số của học sinh và sử dụng thư viện JUnit 5 kết hợp với Maven để kiểm thử đơn vị (Unit Test).
