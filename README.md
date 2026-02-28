@@ -55,3 +55,36 @@ Kết luận:
 -Độ ổn định: Hệ thống hoạt động cực kỳ ổn định ở các kịch bản cơ bản và tùy chỉnh với 0% lỗi. Ở kịch bản tải nặng nhất (hơn 3100 samples), dù có phát sinh lỗi nhỏ (2.92%), nhưng đây là con số nằm trong mức cho phép khi thực hiện kiểm thử tự động cường độ cao lên một server công cộng.
 -Khả năng chịu tải: Thông lượng đạt 25.1/sec là một minh chứng cho thấy hạ tầng của đối tượng kiểm thử có khả năng tiếp nhận và xử lý lượng lớn dữ liệu đồng thời mà không bị treo hệ thống.
 ==> Tổng kết: Bài thực hành đã hoàn thành xuất sắc mục tiêu đề ra. Các dữ liệu thu thập được phản ánh trung thực hiệu năng của website và giúp học viên hiểu rõ cách phân tích các chỉ số kỹ thuật trong kiểm thử hiệu năng.
+
+#ManualTesting
+1. Giới thiệu
+
+Bài thực hành này tập trung vào hoạt động kiểm thử phần mềm thủ công (Manual Testing) đối với một hệ thống Website thương mại điện tử (E-commerce) mô phỏng. Dự án được triển khai theo quy trình đảm bảo chất lượng phần mềm (Quality Assurance – QA) đầy đủ, bao quát toàn bộ vòng đời kiểm thử nhằm đánh giá mức độ ổn định, tính chính xác và khả năng đáp ứng yêu cầu của hệ thống.
+
+2. Cấu trúc tài liệu bàn giao (Deliverables)
+
+Toàn bộ hồ sơ kiểm thử đã được chuẩn hóa và tổ chức trong thư mục E-Commerce_Manual_Testing, bao gồm các tài liệu chính sau:
+
+Test Plan (Kế hoạch kiểm thử): Xác định phạm vi kiểm thử (In-scope/Out-of-scope), phân tích rủi ro và mô tả môi trường kiểm thử.
+
+Test Cases (Ca kiểm thử): Xây dựng 45 ca kiểm thử bao gồm các kịch bản Positive, Negative, Boundary và Security, bao phủ ba phân hệ chính: Authentication, Product & Cart, và Checkout.
+
+Requirement Traceability Matrix (RTM): Thiết lập ma trận truy vết yêu cầu nhằm đảm bảo 100% độ bao phủ đối với 16 yêu cầu chức năng của hệ thống.
+
+Bug Reports (Báo cáo lỗi): Ghi nhận và theo dõi 10 lỗi giả định với đầy đủ thông tin như mức độ nghiêm trọng (Severity), độ ưu tiên (Priority), các bước tái hiện lỗi (Steps to Reproduce) và môi trường hệ thống.
+
+Test Report (Báo cáo kiểm thử tổng hợp): Phân tích dữ liệu kiểm thử và đưa ra quyết định không phát hành (No-Release) dựa trên cơ sở định lượng và đánh giá rủi ro.
+
+Test Metrics (Chỉ số kiểm thử): Đánh giá hiệu quả kiểm thử thông qua bốn chỉ số trọng yếu gồm: Execution Rate, Pass Rate, Defect Density và Severity Distribution.
+
+3. Tóm tắt kết quả
+
+Tổng số lượng Test Cases: 45
+
+Tỷ lệ Pass: 77,8%
+
+Tỷ lệ Fail: 22,2%
+
+Tổng số lỗi được phát hiện: 10 lỗi, trong đó có 2 lỗi ở mức độ Critical liên quan đến quy trình thanh toán và sai lệch tính toán giá trị tiền tệ (giá trị âm).
+
+Căn cứ vào tỷ lệ Pass chưa đạt ngưỡng kỳ vọng 95% và sự tồn tại của các lỗi nghiêm trọng chưa được khắc phục, dự án được đề xuất quyết định Không phát hành (No-Release) cho đến khi các vấn đề quan trọng được xử lý triệt để.
