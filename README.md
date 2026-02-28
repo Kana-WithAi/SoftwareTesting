@@ -56,7 +56,7 @@ Kết luận:
 -Khả năng chịu tải: Thông lượng đạt 25.1/sec là một minh chứng cho thấy hạ tầng của đối tượng kiểm thử có khả năng tiếp nhận và xử lý lượng lớn dữ liệu đồng thời mà không bị treo hệ thống.
 ==> Tổng kết: Bài thực hành đã hoàn thành xuất sắc mục tiêu đề ra. Các dữ liệu thu thập được phản ánh trung thực hiệu năng của website và giúp học viên hiểu rõ cách phân tích các chỉ số kỹ thuật trong kiểm thử hiệu năng.
 
-#ManualTesting
+# ManualTesting
 1. Giới thiệu
 
 Bài thực hành này tập trung vào hoạt động kiểm thử phần mềm thủ công (Manual Testing) đối với một hệ thống Website thương mại điện tử (E-commerce) mô phỏng. Dự án được triển khai theo quy trình đảm bảo chất lượng phần mềm (Quality Assurance – QA) đầy đủ, bao quát toàn bộ vòng đời kiểm thử nhằm đánh giá mức độ ổn định, tính chính xác và khả năng đáp ứng yêu cầu của hệ thống.
